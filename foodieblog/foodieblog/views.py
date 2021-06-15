@@ -16,3 +16,15 @@ def home_view(request):
         "directo": Path(settings.BASE_DIR / "staticfiles")
     }
     return render(request, template, context)
+
+
+def about_view(request):
+    template = "about.html"
+    context = {}
+    return render(request, template, context)
+
+
+def contact_view(request):
+    template = "contact.html"
+    context = {}
+    return render(request, template, context)
